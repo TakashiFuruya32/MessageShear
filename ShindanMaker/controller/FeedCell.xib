@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="272" id="KGk-i7-Jjw" customClass="FeedCell" customModule="ShindanMaker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="158"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xCt-TY-gcv">
+                        <rect key="frame" x="16" y="34" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="EDk-Ai-oMh"/>
+                            <constraint firstAttribute="height" constant="90" id="TAM-86-scd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORG-F8-Bme">
+                        <rect key="frame" x="114" y="34" width="201" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="201" id="fQm-mo-W4s"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sii-Pm-gVp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="18"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="IKh-AB-izT"/>
+                            <constraint firstAttribute="width" constant="320" id="Y46-vp-UPq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ORG-F8-Bme" firstAttribute="leading" secondItem="xCt-TY-gcv" secondAttribute="trailing" constant="8" id="8uF-6A-L1u"/>
+                    <constraint firstAttribute="trailing" secondItem="Sii-Pm-gVp" secondAttribute="trailing" id="Bwb-9a-EqP"/>
+                    <constraint firstAttribute="bottom" secondItem="ORG-F8-Bme" secondAttribute="bottom" constant="34" id="XwY-qv-LcR"/>
+                    <constraint firstAttribute="trailing" secondItem="ORG-F8-Bme" secondAttribute="trailing" constant="5" id="bG4-Jg-6Ay"/>
+                    <constraint firstItem="ORG-F8-Bme" firstAttribute="top" secondItem="Sii-Pm-gVp" secondAttribute="bottom" constant="16" id="d5Z-px-79l"/>
+                    <constraint firstItem="Sii-Pm-gVp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dbj-lF-ONF"/>
+                    <constraint firstItem="xCt-TY-gcv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="34" id="goo-GY-lOZ"/>
+                    <constraint firstItem="Sii-Pm-gVp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nKv-kN-KB3"/>
+                    <constraint firstItem="xCt-TY-gcv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="x38-0E-EL8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="profileImageView" destination="xCt-TY-gcv" id="AUH-0c-bJ3"/>
+                <outlet property="quoteLabel" destination="ORG-F8-Bme" id="dWZ-9B-1f8"/>
+                <outlet property="topView" destination="Sii-Pm-gVp" id="RbP-dC-eJV"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="70.3125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

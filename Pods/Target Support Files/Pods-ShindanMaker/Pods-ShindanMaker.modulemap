@@ -1,0 +1,6 @@
+framework module Pods_ShindanMaker {
+  umbrella header "Pods-ShindanMaker-umbrella.h"
+
+  export *
+  module * { export * }
+}

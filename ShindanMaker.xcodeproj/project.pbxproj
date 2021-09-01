@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96BC5A1E289E88EC29343239 /* Pods_ShindanMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF4E0AE3AC277D222753B64 /* Pods_ShindanMaker.framework */; };
+		D625123626D31208008B92D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625123526D31208008B92D7 /* AppDelegate.swift */; };
+		D625123826D31208008B92D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625123726D31208008B92D7 /* SceneDelegate.swift */; };
+		D625123A26D31208008B92D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625123926D31208008B92D7 /* ViewController.swift */; };
+		D625123D26D31208008B92D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D625123B26D31208008B92D7 /* Main.storyboard */; };
+		D625123F26D3120B008B92D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D625123E26D3120B008B92D7 /* Assets.xcassets */; };
+		D625124226D3120B008B92D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D625124026D3120B008B92D7 /* LaunchScreen.storyboard */; };
+		D696CC5426D3183A00331DB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696CC5326D3183A00331DB9 /* LoginViewController.swift */; };
+		D696CC5626D31C5400331DB9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D696CC5526D31C5400331DB9 /* GoogleService-Info.plist */; };
+		D696CC5826D344BD00331DB9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696CC5726D344BD00331DB9 /* FeedViewController.swift */; };
+		D696CC5B26D3488600331DB9 /* Feeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696CC5A26D3488600331DB9 /* Feeds.swift */; };
+		D696CC5F26D349D900331DB9 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696CC5D26D349D900331DB9 /* FeedCell.swift */; };
+		D696CC6026D349DA00331DB9 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D696CC5E26D349D900331DB9 /* FeedCell.xib */; };
+		D696CC6426D379DB00331DB9 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696CC6226D379DB00331DB9 /* CustomTableViewCell.swift */; };
+		D696CC6526D379DB00331DB9 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D696CC6326D379DB00331DB9 /* CustomTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3BF4E0AE3AC277D222753B64 /* Pods_ShindanMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShindanMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B70D6801EEA04583DD5F16 /* Pods-ShindanMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShindanMaker.release.xcconfig"; path = "Target Support Files/Pods-ShindanMaker/Pods-ShindanMaker.release.xcconfig"; sourceTree = "<group>"; };
+		9BE38B60673733E27984C0EA /* Pods-ShindanMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShindanMaker.debug.xcconfig"; path = "Target Support Files/Pods-ShindanMaker/Pods-ShindanMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		D625123226D31208008B92D7 /* ShindanMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShindanMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D625123526D31208008B92D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D625123726D31208008B92D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D625123926D31208008B92D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D625123C26D31208008B92D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D625123E26D3120B008B92D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D625124126D3120B008B92D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D625124326D3120B008B92D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D696CC5326D3183A00331DB9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D696CC5526D31C5400331DB9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D696CC5726D344BD00331DB9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		D696CC5A26D3488600331DB9 /* Feeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feeds.swift; sourceTree = "<group>"; };
+		D696CC5D26D349D900331DB9 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		D696CC5E26D349D900331DB9 /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
+		D696CC6226D379DB00331DB9 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		D696CC6326D379DB00331DB9 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D625122F26D31208008B92D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BC5A1E289E88EC29343239 /* Pods_ShindanMaker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47526C480914B7CE8B6CC723 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BE38B60673733E27984C0EA /* Pods-ShindanMaker.debug.xcconfig */,
+				42B70D6801EEA04583DD5F16 /* Pods-ShindanMaker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D625122926D31208008B92D7 = {
+			isa = PBXGroup;
+			children = (
+				D625123426D31208008B92D7 /* ShindanMaker */,
+				D625123326D31208008B92D7 /* Products */,
+				47526C480914B7CE8B6CC723 /* Pods */,
+				F63E05F1757C705186DCA50E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D625123326D31208008B92D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D625123226D31208008B92D7 /* ShindanMaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D625123426D31208008B92D7 /* ShindanMaker */ = {
+			isa = PBXGroup;
+			children = (
+				D696CC5926D3485000331DB9 /* Model */,
+				D696CC5C26D349AB00331DB9 /* view */,
+				D696CC6126D3781B00331DB9 /* controller */,
+				D625124326D3120B008B92D7 /* Info.plist */,
+				D696CC5526D31C5400331DB9 /* GoogleService-Info.plist */,
+			);
+			path = ShindanMaker;
+			sourceTree = "<group>";
+		};
+		D696CC5926D3485000331DB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D696CC5A26D3488600331DB9 /* Feeds.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D696CC5C26D349AB00331DB9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D625123B26D31208008B92D7 /* Main.storyboard */,
+				D625123E26D3120B008B92D7 /* Assets.xcassets */,
+				D625124026D3120B008B92D7 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D696CC6126D3781B00331DB9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				D696CC5D26D349D900331DB9 /* FeedCell.swift */,
+				D696CC5E26D349D900331DB9 /* FeedCell.xib */,
+				D696CC5726D344BD00331DB9 /* FeedViewController.swift */,
+				D625123926D31208008B92D7 /* ViewController.swift */,
+				D696CC5326D3183A00331DB9 /* LoginViewController.swift */,
+				D625123526D31208008B92D7 /* AppDelegate.swift */,
+				D625123726D31208008B92D7 /* SceneDelegate.swift */,
+				D696CC6226D379DB00331DB9 /* CustomTableViewCell.swift */,
+				D696CC6326D379DB00331DB9 /* CustomTableViewCell.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		F63E05F1757C705186DCA50E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BF4E0AE3AC277D222753B64 /* Pods_ShindanMaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D625123126D31208008B92D7 /* ShindanMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D625124626D3120B008B92D7 /* Build configuration list for PBXNativeTarget "ShindanMaker" */;
+			buildPhases = (
+				BACA9A0821473AB5530D8562 /* [CP] Check Pods Manifest.lock */,
+				D625122E26D31208008B92D7 /* Sources */,
+				D625122F26D31208008B92D7 /* Frameworks */,
+				D625123026D31208008B92D7 /* Resources */,
+				B1B2B745C12E489582E2D6C0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShindanMaker;
+			productName = ShindanMaker;
+			productReference = D625123226D31208008B92D7 /* ShindanMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D625122A26D31208008B92D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D625123126D31208008B92D7 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = D625122D26D31208008B92D7 /* Build configuration list for PBXProject "ShindanMaker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D625122926D31208008B92D7;
+			productRefGroup = D625123326D31208008B92D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D625123126D31208008B92D7 /* ShindanMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D625123026D31208008B92D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D625124226D3120B008B92D7 /* LaunchScreen.storyboard in Resources */,
+				D696CC5626D31C5400331DB9 /* GoogleService-Info.plist in Resources */,
+				D696CC6526D379DB00331DB9 /* CustomTableViewCell.xib in Resources */,
+				D625123F26D3120B008B92D7 /* Assets.xcassets in Resources */,
+				D625123D26D31208008B92D7 /* Main.storyboard in Resources */,
+				D696CC6026D349DA00331DB9 /* FeedCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1B2B745C12E489582E2D6C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShindanMaker/Pods-ShindanMaker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShindanMaker/Pods-ShindanMaker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShindanMaker/Pods-ShindanMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BACA9A0821473AB5530D8562 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShindanMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D625122E26D31208008B92D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D696CC5F26D349D900331DB9 /* FeedCell.swift in Sources */,
+				D696CC5426D3183A00331DB9 /* LoginViewController.swift in Sources */,
+				D696CC6426D379DB00331DB9 /* CustomTableViewCell.swift in Sources */,
+				D625123A26D31208008B92D7 /* ViewController.swift in Sources */,
+				D696CC5826D344BD00331DB9 /* FeedViewController.swift in Sources */,
+				D625123626D31208008B92D7 /* AppDelegate.swift in Sources */,
+				D625123826D31208008B92D7 /* SceneDelegate.swift in Sources */,
+				D696CC5B26D3488600331DB9 /* Feeds.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D625123B26D31208008B92D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D625123C26D31208008B92D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D625124026D3120B008B92D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D625124126D3120B008B92D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D625124426D3120B008B92D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D625124526D3120B008B92D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D625124726D3120B008B92D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE38B60673733E27984C0EA /* Pods-ShindanMaker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZGTVZ5ZL6;
+				INFOPLIST_FILE = ShindanMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "createmyself-hechizan.com.ShindanMaker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D625124826D3120B008B92D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42B70D6801EEA04583DD5F16 /* Pods-ShindanMaker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZGTVZ5ZL6;
+				INFOPLIST_FILE = ShindanMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "createmyself-hechizan.com.ShindanMaker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D625122D26D31208008B92D7 /* Build configuration list for PBXProject "ShindanMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D625124426D3120B008B92D7 /* Debug */,
+				D625124526D3120B008B92D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D625124626D3120B008B92D7 /* Build configuration list for PBXNativeTarget "ShindanMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D625124726D3120B008B92D7 /* Debug */,
+				D625124826D3120B008B92D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D625122A26D31208008B92D7 /* Project object */;
+}
